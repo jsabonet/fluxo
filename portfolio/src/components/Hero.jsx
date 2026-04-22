@@ -32,13 +32,10 @@ const Hero = () => {
           y: [0, 20, 0]
         }}
         transition={{ 
-          rotate: { duration: 12, repeat: Infinity, ease: 'linear' },
+          rotate: { duration: 20, repeat: Infinity, ease: 'linear' },
           y: { duration: 10, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 bg-gradient-to-br from-primary/40 to-primary/20 rounded-full blur-2xl ring-2 ring-primary/50 shadow-lg shadow-primary/30"
-        style={{
-          boxShadow: '0 0 40px rgba(107, 65, 193, 0.4), inset 0 0 40px rgba(107, 65, 193, 0.15)'
-        }}
+        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 bg-primary/15 rounded-full blur-3xl ring-2 ring-primary/70"
       />
       <motion.div
         animate={{ 
@@ -46,29 +43,23 @@ const Hero = () => {
           y: [0, -20, 0]
         }}
         transition={{ 
-          rotate: { duration: 15, repeat: Infinity, ease: 'linear' },
+          rotate: { duration: 22, repeat: Infinity, ease: 'linear' },
           y: { duration: 12, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-gradient-to-tr from-secondary/40 to-secondary/20 rounded-full blur-2xl ring-2 ring-secondary/50 shadow-lg shadow-secondary/30"
-        style={{
-          boxShadow: '0 0 50px rgba(0, 217, 255, 0.4), inset 0 0 50px rgba(0, 217, 255, 0.15)'
-        }}
+        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/15 rounded-full blur-3xl ring-2 ring-secondary/70"
       />
       <motion.div
         animate={{ 
           scale: [1, 1.2, 1], 
           rotateZ: 360,
-          opacity: [0.25, 0.35, 0.25]
+          opacity: [0.15, 0.25, 0.15]
         }}
         transition={{ 
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
-          rotateZ: { duration: 10, repeat: Infinity, ease: 'linear' },
+          rotateZ: { duration: 18, repeat: Infinity, ease: 'linear' },
           opacity: { duration: 8, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-gradient-to-br from-primary/35 to-primary/15 rounded-full blur-2xl ring-2 ring-primary/40 shadow-md shadow-primary/25"
-        style={{
-          boxShadow: '0 0 35px rgba(107, 65, 193, 0.35), inset 0 0 35px rgba(107, 65, 193, 0.1)'
-        }}
+        className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/10 rounded-full blur-3xl ring-2 ring-primary/60"
       />
       <motion.div
         animate={{ 
@@ -77,14 +68,11 @@ const Hero = () => {
           scale: [1, 1.15, 1]
         }}
         transition={{ 
-          rotate: { duration: 18, repeat: Infinity, ease: 'linear' },
+          rotate: { duration: 24, repeat: Infinity, ease: 'linear' },
           y: { duration: 11, repeat: Infinity, ease: 'easeInOut' },
           scale: { duration: 9, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-gradient-to-tl from-secondary/35 to-secondary/15 rounded-full blur-2xl ring-2 ring-secondary/40 shadow-md shadow-secondary/25"
-        style={{
-          boxShadow: '0 0 45px rgba(0, 217, 255, 0.35), inset 0 0 45px rgba(0, 217, 255, 0.1)'
-        }}
+        className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/10 rounded-full blur-3xl ring-2 ring-secondary/60"
       />
       <motion.div
         animate={{ 
@@ -92,29 +80,23 @@ const Hero = () => {
           x: [0, 25, 0]
         }}
         transition={{ 
-          rotate: { duration: 20, repeat: Infinity, ease: 'linear' },
+          rotate: { duration: 26, repeat: Infinity, ease: 'linear' },
           x: { duration: 13, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 bg-gradient-to-r from-primary/30 to-primary/10 rounded-full blur-2xl ring-2 ring-primary/30 shadow-sm shadow-primary/20"
-        style={{
-          boxShadow: '0 0 30px rgba(107, 65, 193, 0.3), inset 0 0 30px rgba(107, 65, 193, 0.08)'
-        }}
+        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 bg-primary/8 rounded-full blur-3xl ring-2 ring-primary/50"
       />
       <motion.div
         animate={{ 
           scale: [1, 1.1, 1],
           rotateZ: -360,
-          opacity: [0.2, 0.3, 0.2]
+          opacity: [0.1, 0.2, 0.1]
         }}
         transition={{ 
           scale: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
-          rotateZ: { duration: 16, repeat: Infinity, ease: 'linear' },
+          rotateZ: { duration: 20, repeat: Infinity, ease: 'linear' },
           opacity: { duration: 7, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-gradient-to-bl from-secondary/30 to-secondary/10 rounded-full blur-2xl ring-2 ring-secondary/30 shadow-sm shadow-secondary/20"
-        style={{
-          boxShadow: '0 0 35px rgba(0, 217, 255, 0.3), inset 0 0 35px rgba(0, 217, 255, 0.08)'
-        }}
+        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/8 rounded-full blur-3xl ring-2 ring-secondary/50"
       />
 
       <motion.div
