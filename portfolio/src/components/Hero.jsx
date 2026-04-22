@@ -25,7 +25,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      {/* Enhanced Flowing Background Elements */}
+      {/* Enhanced Flowing Rays - Primary Top Right */}
       <motion.div
         animate={{ 
           rotate: 360,
@@ -35,8 +35,13 @@ const Hero = () => {
           rotate: { duration: 20, repeat: Infinity, ease: 'linear' },
           y: { duration: 10, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 bg-primary/15 rounded-full blur-3xl ring-2 ring-primary/70"
+        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 blur-xl ring-2 ring-primary/80"
+        style={{
+          background: 'conic-gradient(from 0deg, transparent 0%, rgba(107, 65, 193, 0.4) 15%, transparent 30%, transparent 50%, rgba(107, 65, 193, 0.3) 65%, transparent 80%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
+      {/* Secondary Bottom Left */}
       <motion.div
         animate={{ 
           rotate: -360,
@@ -46,21 +51,31 @@ const Hero = () => {
           rotate: { duration: 22, repeat: Infinity, ease: 'linear' },
           y: { duration: 12, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/15 rounded-full blur-3xl ring-2 ring-secondary/70"
+        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-xl ring-2 ring-secondary/80"
+        style={{
+          background: 'conic-gradient(from 45deg, transparent 0%, rgba(0, 217, 255, 0.5) 10%, transparent 20%, transparent 50%, rgba(0, 217, 255, 0.4) 70%, transparent 90%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
+      {/* Primary Center */}
       <motion.div
         animate={{ 
           scale: [1, 1.2, 1], 
           rotateZ: 360,
-          opacity: [0.15, 0.25, 0.15]
+          opacity: [0.2, 0.35, 0.2]
         }}
         transition={{ 
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 18, repeat: Infinity, ease: 'linear' },
           opacity: { duration: 8, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/10 rounded-full blur-3xl ring-2 ring-primary/60"
+        className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 blur-lg ring-2 ring-primary/70"
+        style={{
+          background: 'conic-gradient(from 90deg, transparent 0%, rgba(107, 65, 193, 0.35) 12%, transparent 25%, transparent 50%, rgba(107, 65, 193, 0.25) 62%, transparent 75%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
+      {/* Secondary Bottom Right */}
       <motion.div
         animate={{ 
           rotate: -360,
@@ -72,8 +87,13 @@ const Hero = () => {
           y: { duration: 11, repeat: Infinity, ease: 'easeInOut' },
           scale: { duration: 9, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/10 rounded-full blur-3xl ring-2 ring-secondary/60"
+        className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/70"
+        style={{
+          background: 'conic-gradient(from 180deg, transparent 0%, rgba(0, 217, 255, 0.4) 18%, transparent 35%, transparent 50%, rgba(0, 217, 255, 0.3) 65%, transparent 82%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
+      {/* Primary Left */}
       <motion.div
         animate={{ 
           rotate: 360,
@@ -83,20 +103,29 @@ const Hero = () => {
           rotate: { duration: 26, repeat: Infinity, ease: 'linear' },
           x: { duration: 13, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 bg-primary/8 rounded-full blur-3xl ring-2 ring-primary/50"
+        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 blur-lg ring-2 ring-primary/60"
+        style={{
+          background: 'conic-gradient(from 270deg, transparent 0%, rgba(107, 65, 193, 0.3) 20%, transparent 40%, transparent 50%, rgba(107, 65, 193, 0.2) 60%, transparent 80%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
+      {/* Secondary Bottom Right Corner */}
       <motion.div
         animate={{ 
           scale: [1, 1.1, 1],
           rotateZ: -360,
-          opacity: [0.1, 0.2, 0.1]
+          opacity: [0.15, 0.28, 0.15]
         }}
         transition={{ 
           scale: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 20, repeat: Infinity, ease: 'linear' },
           opacity: { duration: 7, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/8 rounded-full blur-3xl ring-2 ring-secondary/50"
+        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/60"
+        style={{
+          background: 'conic-gradient(from 315deg, transparent 0%, rgba(0, 217, 255, 0.35) 25%, transparent 45%, transparent 50%, rgba(0, 217, 255, 0.2) 70%, transparent 90%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
 
       <motion.div

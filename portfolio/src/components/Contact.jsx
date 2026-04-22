@@ -81,16 +81,24 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Animated Background Elements */}
+      {/* Animated Background Elements - Flowing Rays */}
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 26, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-primary/12 rounded-full blur-3xl ring-2 ring-primary/70"
+        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-primary/80"
+        style={{
+          background: 'conic-gradient(from 45deg, transparent 0%, rgba(107, 65, 193, 0.45) 12%, transparent 28%, transparent 50%, rgba(107, 65, 193, 0.35) 72%, transparent 88%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/12 rounded-full blur-3xl ring-2 ring-secondary/70"
+        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/80"
+        style={{
+          background: 'conic-gradient(from 225deg, transparent 0%, rgba(0, 217, 255, 0.5) 15%, transparent 30%, transparent 50%, rgba(0, 217, 255, 0.4) 70%, transparent 85%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
       <motion.div
         animate={{ scale: [1, 1.2, 1], rotateZ: 360 }}
@@ -98,7 +106,11 @@ const Contact = () => {
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 22, repeat: Infinity, ease: 'linear' }
         }}
-        className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/10 rounded-full blur-3xl ring-2 ring-secondary/60"
+        className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 blur-lg ring-2 ring-secondary/70"
+        style={{
+          background: 'conic-gradient(from 135deg, transparent 0%, rgba(0, 217, 255, 0.4) 16%, transparent 32%, transparent 50%, rgba(0, 217, 255, 0.3) 68%, transparent 84%, transparent 100%)',
+          borderRadius: '50%'
+        }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
