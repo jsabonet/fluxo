@@ -81,22 +81,24 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Animated Background Elements - Flowing Rays */}
+      {/* Vortex Effects - Hurricane Formation */}
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 26, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-primary/80"
+        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-primary/75"
         style={{
-          background: 'conic-gradient(from 45deg, transparent 0%, rgba(107, 65, 193, 0.45) 12%, transparent 28%, transparent 50%, rgba(107, 65, 193, 0.35) 72%, transparent 88%, transparent 100%)',
+          background: `radial-gradient(circle at 30% 30%, rgba(107, 65, 193, 0.55) 0%, rgba(107, 65, 193, 0.38) 14%, rgba(107, 65, 193, 0.18) 38%, transparent 52%), 
+                        conic-gradient(from 45deg at 50% 50%, rgba(107, 65, 193, 0.45) 0deg, transparent 68deg, rgba(107, 65, 193, 0.3) 136deg, transparent 204deg, rgba(107, 65, 193, 0.38) 272deg, transparent 320deg, rgba(107, 65, 193, 0.45) 360deg)`,
           borderRadius: '50%'
         }}
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/80"
+        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/75"
         style={{
-          background: 'conic-gradient(from 225deg, transparent 0%, rgba(0, 217, 255, 0.5) 15%, transparent 30%, transparent 50%, rgba(0, 217, 255, 0.4) 70%, transparent 85%, transparent 100%)',
+          background: `radial-gradient(circle at 70% 70%, rgba(0, 217, 255, 0.6) 0%, rgba(0, 217, 255, 0.42) 13%, rgba(0, 217, 255, 0.2) 36%, transparent 50%), 
+                        conic-gradient(from 225deg at 50% 50%, rgba(0, 217, 255, 0.5) 0deg, transparent 70deg, rgba(0, 217, 255, 0.35) 140deg, transparent 210deg, rgba(0, 217, 255, 0.42) 280deg, transparent 335deg, rgba(0, 217, 255, 0.5) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -108,7 +110,8 @@ const Contact = () => {
         }}
         className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 blur-lg ring-2 ring-secondary/70"
         style={{
-          background: 'conic-gradient(from 135deg, transparent 0%, rgba(0, 217, 255, 0.4) 16%, transparent 32%, transparent 50%, rgba(0, 217, 255, 0.3) 68%, transparent 84%, transparent 100%)',
+          background: `radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.5) 0%, rgba(0, 217, 255, 0.33) 17%, rgba(0, 217, 255, 0.13) 44%, transparent 60%), 
+                        conic-gradient(from 135deg at 50% 50%, rgba(0, 217, 255, 0.4) 0deg, transparent 75deg, rgba(0, 217, 255, 0.26) 150deg, transparent 222deg, rgba(0, 217, 255, 0.33) 290deg, transparent 335deg, rgba(0, 217, 255, 0.4) 360deg)`,
           borderRadius: '50%'
         }}
       />

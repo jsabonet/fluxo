@@ -25,7 +25,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      {/* Enhanced Flowing Rays - Primary Top Right */}
+      {/* Swirling Vortex Effects - Creating Hurricane-like Formation */}
       <motion.div
         animate={{ 
           rotate: 360,
@@ -35,13 +35,14 @@ const Hero = () => {
           rotate: { duration: 20, repeat: Infinity, ease: 'linear' },
           y: { duration: 10, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 blur-xl ring-2 ring-primary/80"
+        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 blur-lg ring-2 ring-primary/75"
         style={{
-          background: 'conic-gradient(from 0deg, transparent 0%, rgba(107, 65, 193, 0.4) 15%, transparent 30%, transparent 50%, rgba(107, 65, 193, 0.3) 65%, transparent 80%, transparent 100%)',
+          background: `radial-gradient(circle at 30% 30%, rgba(107, 65, 193, 0.6) 0%, rgba(107, 65, 193, 0.4) 15%, rgba(107, 65, 193, 0.2) 35%, transparent 50%), 
+                        conic-gradient(from 0deg at 50% 50%, rgba(107, 65, 193, 0.5) 0deg, transparent 60deg, rgba(107, 65, 193, 0.3) 120deg, transparent 180deg, rgba(107, 65, 193, 0.4) 240deg, transparent 300deg, rgba(107, 65, 193, 0.5) 360deg)`,
           borderRadius: '50%'
         }}
       />
-      {/* Secondary Bottom Left */}
+      {/* Secondary Bottom Left - Cyan Vortex */}
       <motion.div
         animate={{ 
           rotate: -360,
@@ -51,18 +52,19 @@ const Hero = () => {
           rotate: { duration: 22, repeat: Infinity, ease: 'linear' },
           y: { duration: 12, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-xl ring-2 ring-secondary/80"
+        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/75"
         style={{
-          background: 'conic-gradient(from 45deg, transparent 0%, rgba(0, 217, 255, 0.5) 10%, transparent 20%, transparent 50%, rgba(0, 217, 255, 0.4) 70%, transparent 90%, transparent 100%)',
+          background: `radial-gradient(circle at 70% 70%, rgba(0, 217, 255, 0.7) 0%, rgba(0, 217, 255, 0.45) 12%, rgba(0, 217, 255, 0.2) 40%, transparent 55%), 
+                        conic-gradient(from 45deg at 50% 50%, rgba(0, 217, 255, 0.55) 0deg, transparent 70deg, rgba(0, 217, 255, 0.35) 140deg, transparent 200deg, rgba(0, 217, 255, 0.45) 270deg, transparent 320deg, rgba(0, 217, 255, 0.55) 360deg)`,
           borderRadius: '50%'
         }}
       />
-      {/* Primary Center */}
+      {/* Primary Center - Purple Spiral */}
       <motion.div
         animate={{ 
           scale: [1, 1.2, 1], 
           rotateZ: 360,
-          opacity: [0.2, 0.35, 0.2]
+          opacity: [0.25, 0.38, 0.25]
         }}
         transition={{ 
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
@@ -71,11 +73,12 @@ const Hero = () => {
         }}
         className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 blur-lg ring-2 ring-primary/70"
         style={{
-          background: 'conic-gradient(from 90deg, transparent 0%, rgba(107, 65, 193, 0.35) 12%, transparent 25%, transparent 50%, rgba(107, 65, 193, 0.25) 62%, transparent 75%, transparent 100%)',
+          background: `radial-gradient(circle at 35% 35%, rgba(107, 65, 193, 0.55) 0%, rgba(107, 65, 193, 0.35) 20%, rgba(107, 65, 193, 0.15) 45%, transparent 60%), 
+                        conic-gradient(from 90deg at 50% 50%, rgba(107, 65, 193, 0.45) 0deg, transparent 65deg, rgba(107, 65, 193, 0.3) 130deg, transparent 190deg, rgba(107, 65, 193, 0.4) 260deg, transparent 310deg, rgba(107, 65, 193, 0.45) 360deg)`,
           borderRadius: '50%'
         }}
       />
-      {/* Secondary Bottom Right */}
+      {/* Secondary Bottom Right - Cyan Vortex */}
       <motion.div
         animate={{ 
           rotate: -360,
@@ -89,11 +92,12 @@ const Hero = () => {
         }}
         className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/70"
         style={{
-          background: 'conic-gradient(from 180deg, transparent 0%, rgba(0, 217, 255, 0.4) 18%, transparent 35%, transparent 50%, rgba(0, 217, 255, 0.3) 65%, transparent 82%, transparent 100%)',
+          background: `radial-gradient(circle at 65% 65%, rgba(0, 217, 255, 0.5) 0%, rgba(0, 217, 255, 0.35) 18%, rgba(0, 217, 255, 0.15) 42%, transparent 58%), 
+                        conic-gradient(from 180deg at 50% 50%, rgba(0, 217, 255, 0.4) 0deg, transparent 72deg, rgba(0, 217, 255, 0.28) 145deg, transparent 210deg, rgba(0, 217, 255, 0.35) 280deg, transparent 330deg, rgba(0, 217, 255, 0.4) 360deg)`,
           borderRadius: '50%'
         }}
       />
-      {/* Primary Left */}
+      {/* Primary Left - Purple Vortex */}
       <motion.div
         animate={{ 
           rotate: 360,
@@ -103,27 +107,29 @@ const Hero = () => {
           rotate: { duration: 26, repeat: Infinity, ease: 'linear' },
           x: { duration: 13, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 blur-lg ring-2 ring-primary/60"
+        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 blur-lg ring-2 ring-primary/65"
         style={{
-          background: 'conic-gradient(from 270deg, transparent 0%, rgba(107, 65, 193, 0.3) 20%, transparent 40%, transparent 50%, rgba(107, 65, 193, 0.2) 60%, transparent 80%, transparent 100%)',
+          background: `radial-gradient(circle at 40% 40%, rgba(107, 65, 193, 0.45) 0%, rgba(107, 65, 193, 0.3) 22%, rgba(107, 65, 193, 0.1) 48%, transparent 65%), 
+                        conic-gradient(from 270deg at 50% 50%, rgba(107, 65, 193, 0.35) 0deg, transparent 68deg, rgba(107, 65, 193, 0.22) 138deg, transparent 202deg, rgba(107, 65, 193, 0.3) 270deg, transparent 320deg, rgba(107, 65, 193, 0.35) 360deg)`,
           borderRadius: '50%'
         }}
       />
-      {/* Secondary Bottom Right Corner */}
+      {/* Secondary Bottom Right Corner - Cyan Vortex */}
       <motion.div
         animate={{ 
           scale: [1, 1.1, 1],
           rotateZ: -360,
-          opacity: [0.15, 0.28, 0.15]
+          opacity: [0.2, 0.32, 0.2]
         }}
         transition={{ 
           scale: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 20, repeat: Infinity, ease: 'linear' },
           opacity: { duration: 7, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/60"
+        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/65"
         style={{
-          background: 'conic-gradient(from 315deg, transparent 0%, rgba(0, 217, 255, 0.35) 25%, transparent 45%, transparent 50%, rgba(0, 217, 255, 0.2) 70%, transparent 90%, transparent 100%)',
+          background: `radial-gradient(circle at 60% 60%, rgba(0, 217, 255, 0.48) 0%, rgba(0, 217, 255, 0.32) 16%, rgba(0, 217, 255, 0.12) 44%, transparent 62%), 
+                        conic-gradient(from 315deg at 50% 50%, rgba(0, 217, 255, 0.38) 0deg, transparent 75deg, rgba(0, 217, 255, 0.25) 150deg, transparent 215deg, rgba(0, 217, 255, 0.32) 285deg, transparent 335deg, rgba(0, 217, 255, 0.38) 360deg)`,
           borderRadius: '50%'
         }}
       />
