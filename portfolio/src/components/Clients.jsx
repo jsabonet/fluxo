@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 
 const Clients = () => {
-  const [hoveredId, setHoveredId] = useState(null)
-
   const clients = [
     {
       id: 1,
@@ -87,89 +85,92 @@ const Clients = () => {
     }
   ]
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.08,
-        delayChildren: 0.2,
-        duration: 0.8,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { 
-      opacity: 0, 
-      y: 25,
-      scale: 0.95,
-      rotateY: -25
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      rotateY: 0,
-      transition: { 
-        duration: 0.9,
-        ease: 'easeOut',
-      },
-    },
-  }
-
   return (
-    <section id="clients" className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Enhanced Background Elements */}
+    <section id="clients" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-dark/30">
+      {/* Enhanced Flowing Background Elements */}
       <motion.div
         animate={{ 
           rotate: 360,
-          y: [0, 15, 0]
+          y: [0, 20, 0]
         }}
         transition={{ 
-          rotate: { duration: 18, repeat: Infinity, ease: 'linear' },
-          y: { duration: 12, repeat: Infinity, ease: 'easeInOut' }
+          rotate: { duration: 12, repeat: Infinity, ease: 'linear' },
+          y: { duration: 10, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className='absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-bl from-secondary/12 to-transparent rounded-full blur-3xl'
+        className="absolute top-0 right-0 w-32 sm:w-48 md:w-72 lg:w-96 h-32 sm:h-48 md:h-72 lg:h-96 bg-primary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ 
           rotate: -360,
-          y: [0, -15, 0]
+          y: [0, -20, 0]
         }}
         transition={{ 
-          rotate: { duration: 22, repeat: Infinity, ease: 'linear' },
-          y: { duration: 13, repeat: Infinity, ease: 'easeInOut' }
+          rotate: { duration: 15, repeat: Infinity, ease: 'linear' },
+          y: { duration: 12, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className='absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-primary/12 to-transparent rounded-full blur-3xl'
+        className="absolute bottom-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ 
-          scale: [1, 1.12, 1],
-          opacity: [0.2, 0.4, 0.2],
-          rotateZ: 360
+          scale: [1, 1.2, 1], 
+          rotateZ: 360,
+          opacity: [0.12, 0.22, 0.12]
         }}
         transition={{ 
-          scale: { duration: 10, repeat: Infinity, ease: 'easeInOut' },
-          opacity: { duration: 10, repeat: Infinity, ease: 'easeInOut' },
-          rotateZ: { duration: 20, repeat: Infinity, ease: 'linear' }
+          scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
+          rotateZ: { duration: 10, repeat: Infinity, ease: 'linear' },
+          opacity: { duration: 8, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/3 rounded-full blur-3xl'
+        className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/10 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ 
+          rotate: -360,
+          y: [0, 15, 0],
+          scale: [1, 1.15, 1]
+        }}
+        transition={{ 
+          rotate: { duration: 18, repeat: Infinity, ease: 'linear' },
+          y: { duration: 11, repeat: Infinity, ease: 'easeInOut' },
+          scale: { duration: 9, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute top-2/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/8 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ 
+          rotate: 360,
+          x: [0, 25, 0]
+        }}
+        transition={{ 
+          rotate: { duration: 20, repeat: Infinity, ease: 'linear' },
+          x: { duration: 13, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 bg-primary/8 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ 
+          scale: [1, 1.1, 1],
+          rotateZ: -360,
+          opacity: [0.1, 0.18, 0.1]
+        }}
+        transition={{ 
+          scale: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
+          rotateZ: { duration: 16, repeat: Infinity, ease: 'linear' },
+          opacity: { duration: 7, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/7 rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: -60, scale: 0.9 }}
-          whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ 
-            duration: 0.8,
-            ease: 'easeOut'
-          }}
+        <motion.div 
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
           viewport={{ once: true, margin: '-100px' }}
           className="text-center mb-20"
         >
-          <motion.div
+          <motion.div 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
@@ -179,144 +180,117 @@ const Clients = () => {
             <span className="text-secondary font-bold text-lg tracking-widest">PARCEIROS</span>
           </motion.div>
           
-          <h2 className="text-5xl md:text-7xl font-bold mb-6">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6"
+          >
             <span className="bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent">
               Alguns dos Nossos Clientes
             </span>
-          </h2>
+          </motion.h2>
           
           <motion.p 
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-xl text-light/70 max-w-2xl mx-auto"
+            className="text-sm sm:text-base md:text-lg lg:text-xl text-light/70 max-w-2xl mx-auto px-2 sm:px-0"
           >
             Confiança de empresas líderes em todo o país
           </motion.p>
         </motion.div>
 
         {/* Clients Grid */}
-        <motion.div
-          variants={containerVariants}
+        <motion.div 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.08,
+                delayChildren: 0.2,
+              },
+            },
+          }}
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-12"
         >
-          {clients.map((client, index) => (
+          {clients.map((client) => (
             <motion.div
               key={client.id}
-              variants={itemVariants}
-              onMouseEnter={() => setHoveredId(client.id)}
-              onMouseLeave={() => setHoveredId(null)}
-              whileHover={{ 
-                y: -5, 
-                scale: 1.03,
-                transition: { duration: 0.4 }
-              }}
               className="relative group"
+              variants={{
+                hidden: { opacity: 0, y: 30, scale: 0.95 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: {
+                    duration: 0.6,
+                    ease: 'easeOut',
+                  },
+                },
+              }}
             >
-              {/* Outer Glow */}
-              <motion.div
-                animate={hoveredId === client.id ? {
-                  opacity: [0.2, 0.35, 0.2],
-                  scale: [1, 1.03, 1]
-                } : {
-                  opacity: 0.08,
-                  scale: 1
-                }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute inset-0 bg-gradient-to-r from-secondary to-primary rounded-lg blur-lg -z-10"
-              />
-
               {/* Card */}
-              <motion.div
-                className="relative flex items-center justify-center p-6 h-28 bg-gradient-to-br from-dark/80 via-dark/60 to-dark/80 border border-primary/30 rounded-lg backdrop-blur-sm overflow-hidden"
+              <motion.div 
+                className="relative flex items-center justify-center p-6 h-28 bg-gradient-to-br from-dark/80 via-dark/60 to-dark/80 border border-primary/30 rounded-lg backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-secondary/50"
+                whileHover={{
+                  scale: 1.05,
+                  y: -8,
+                  transition: { duration: 0.4 },
+                }}
+                whileTap={{ scale: 0.98 }}
               >
-                {/* Animated Background Gradient */}
-                <motion.div
-                  animate={hoveredId === client.id ? {
-                    opacity: 0.25,
-                    x: [0, 30, 0]
-                  } : {
-                    opacity: 0,
-                    x: 0
-                  }}
-                  transition={{ duration: 3, repeat: Infinity }}
-                  className="absolute inset-0 bg-gradient-to-r from-secondary/3 to-primary/3"
-                />
-
-                {/* Border Animate */}
-                <motion.div
-                  animate={hoveredId === client.id ? {
-                    opacity: [0, 0.25, 0],
-                  } : {
-                    opacity: 0
-                  }}
-                  transition={{ duration: 2.5, repeat: Infinity }}
-                  className="absolute inset-0 border border-secondary/20 rounded-lg"
-                />
-
                 {/* Logo Container */}
                 <div className="relative z-10 flex items-center justify-center w-full h-full">
                   <motion.img
                     src={client.logo}
                     alt={client.name}
-                    className="max-w-[90%] max-h-[90%] object-contain"
-                    animate={hoveredId === client.id ? {
-                      filter: ['brightness(0.88)', 'brightness(1.08)', 'brightness(0.88)'],
-                    } : {
-                      filter: 'brightness(0.82)'
-                    }}
-                    transition={{ duration: 0.7 }}
+                    className="max-w-[90%] max-h-[90%] object-contain opacity-80 transition-opacity duration-300 group-hover:opacity-100"
+                    whileHover={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
                   />
                 </div>
-
-                {/* Corner Accent */}
-                <motion.div
-                  animate={hoveredId === client.id ? {
-                    opacity: 0.6,
-                    scale: 1
-                  } : {
-                    opacity: 0,
-                    scale: 0.5
-                  }}
-                  transition={{ duration: 0.6 }}
-                  className="absolute top-0 right-0 w-12 h-12 bg-gradient-to-bl from-secondary/10 to-transparent"
-                />
               </motion.div>
             </motion.div>
           ))}
         </motion.div>
 
         {/* Bottom CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ 
-            delay: 0.6,
-            duration: 0.8
-          }}
-          viewport={{ once: true }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          viewport={{ once: true, margin: '-100px' }}
           className="text-center"
         >
-          <motion.div
+          <motion.div 
             className="inline-block"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
           >
-            <p className="text-lg text-light/70 mb-4">
-              Descubra como a FLUXO pode transformar sua marca
-            </p>
+            <motion.p 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-lg text-light/70 mb-4"
+            >
+              Descubra como a FLUXO INFORMÁTICO pode transformar sua marca
+            </motion.p>
             <motion.a
               href="#contact"
-              whileHover={{ 
-                scale: 1.02,
-                boxShadow: '0 0 15px rgba(0, 217, 255, 0.25)'
-              }}
-              whileTap={{ scale: 0.99 }}
               className="px-8 py-3 bg-gradient-to-r from-secondary to-primary text-dark font-bold rounded-lg inline-block transition-all duration-300"
+              whileHover={{ 
+                scale: 1.08,
+                boxShadow: '0 0 20px rgba(0, 217, 255, 0.4)',
+              }}
+              whileTap={{ scale: 0.95 }}
             >
               Solicitar Orçamento
             </motion.a>

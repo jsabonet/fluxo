@@ -25,24 +25,78 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
-      {/* Background Elements */}
+      {/* Enhanced Flowing Background Elements */}
       <motion.div
-        animate={{ rotate: 360 }}
-        transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-20 right-10 w-72 h-72 bg-primary/15 rounded-full blur-3xl"
+        animate={{ 
+          rotate: 360,
+          y: [0, 20, 0]
+        }}
+        transition={{ 
+          rotate: { duration: 12, repeat: Infinity, ease: 'linear' },
+          y: { duration: 10, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 bg-primary/15 rounded-full blur-3xl"
       />
       <motion.div
-        animate={{ rotate: -360 }}
-        transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/15 rounded-full blur-3xl"
+        animate={{ 
+          rotate: -360,
+          y: [0, -20, 0]
+        }}
+        transition={{ 
+          rotate: { duration: 15, repeat: Infinity, ease: 'linear' },
+          y: { duration: 12, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/15 rounded-full blur-3xl"
       />
       <motion.div
-        animate={{ scale: [1, 1.2, 1], rotateZ: 360 }}
+        animate={{ 
+          scale: [1, 1.2, 1], 
+          rotateZ: 360,
+          opacity: [0.15, 0.25, 0.15]
+        }}
         transition={{ 
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
-          rotateZ: { duration: 12, repeat: Infinity, ease: 'linear' }
+          rotateZ: { duration: 10, repeat: Infinity, ease: 'linear' },
+          opacity: { duration: 8, repeat: Infinity, ease: 'easeInOut' }
         }}
-        className="absolute top-1/3 left-1/4 w-80 h-80 bg-primary/10 rounded-full blur-3xl"
+        className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/10 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ 
+          rotate: -360,
+          y: [0, 15, 0],
+          scale: [1, 1.15, 1]
+        }}
+        transition={{ 
+          rotate: { duration: 18, repeat: Infinity, ease: 'linear' },
+          y: { duration: 11, repeat: Infinity, ease: 'easeInOut' },
+          scale: { duration: 9, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/10 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ 
+          rotate: 360,
+          x: [0, 25, 0]
+        }}
+        transition={{ 
+          rotate: { duration: 20, repeat: Infinity, ease: 'linear' },
+          x: { duration: 13, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 bg-primary/8 rounded-full blur-3xl"
+      />
+      <motion.div
+        animate={{ 
+          scale: [1, 1.1, 1],
+          rotateZ: -360,
+          opacity: [0.1, 0.2, 0.1]
+        }}
+        transition={{ 
+          scale: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
+          rotateZ: { duration: 16, repeat: Infinity, ease: 'linear' },
+          opacity: { duration: 7, repeat: Infinity, ease: 'easeInOut' }
+        }}
+        className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/8 rounded-full blur-3xl"
       />
 
       <motion.div
@@ -56,27 +110,27 @@ const Hero = () => {
           variants={itemVariants}
           className="mb-8 flex justify-center"
         >
-          <motion.img
+          {/* <motion.img
             src={logo}
             alt="FLUXO"
             className="h-32 w-auto"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
-          />
+          /> */}
         </motion.div>
 
         {/* Main Title */}
         <motion.h1
           variants={itemVariants}
-          className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent"
         >
-          FLUXO
+          FLUXO INFORMÁTICO
         </motion.h1>
 
         {/* Subtitle */}
         <motion.p
           variants={itemVariants}
-          className="text-2xl md:text-3xl text-secondary font-light mb-8"
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-secondary font-light mb-6 sm:mb-8"
         >
           Serigrafia & Gráfica
         </motion.p>
@@ -84,7 +138,7 @@ const Hero = () => {
         {/* Description */}
         <motion.p
           variants={itemVariants}
-          className="text-lg text-light/70 max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-sm sm:text-base md:text-lg text-light/70 max-w-lg sm:max-w-xl md:max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed"
         >
           Soluções criativas e inovadoras em impressão, serigrafia e design gráfico. 
           Transformamos suas ideias em realidade visual com qualidade profissional.
@@ -93,13 +147,13 @@ const Hero = () => {
         {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full px-2 sm:px-0"
         >
           <motion.a
             href="#portfolio"
             whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 217, 255, 0.5)' }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-secondary text-dark font-bold rounded-lg text-lg transition-all duration-300"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-dark font-bold rounded-lg text-sm sm:text-base md:text-lg transition-all duration-300"
           >
             Ver Portfólio
           </motion.a>
@@ -107,7 +161,7 @@ const Hero = () => {
             href="#contact"
             whileHover={{ scale: 1.05, borderColor: '#00D9FF' }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 border-2 border-primary text-light font-bold rounded-lg text-lg hover:bg-primary/10 transition-all duration-300"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-primary text-light font-bold rounded-lg text-sm sm:text-base md:text-lg hover:bg-primary/10 transition-all duration-300"
           >
             Solicitar Orçamento
           </motion.a>
@@ -117,9 +171,9 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="mt-16"
+          className="mt-10 sm:mt-12 md:mt-16 hidden sm:block"
         >
-          <p className="text-light/50 text-sm mb-2">Scroll para explorar</p>
+          <p className="text-light/50 text-xs sm:text-sm mb-2">Scroll para explorar</p>
           <div className="w-6 h-10 border-2 border-secondary rounded-full mx-auto flex items-start justify-center p-2">
             <motion.div
               animate={{ y: [0, 5, 0] }}

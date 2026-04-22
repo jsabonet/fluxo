@@ -30,17 +30,17 @@ const About = () => {
   }
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-dark/50 relative overflow-hidden">
+    <section id="about" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-dark/50 relative overflow-hidden">
       {/* Background Decorations */}
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
-        className="absolute -bottom-40 -right-40 w-80 h-80 bg-secondary/12 rounded-full blur-3xl"
+        className="absolute -bottom-20 sm:-bottom-40 -right-20 sm:-right-40 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
-        className="absolute -top-40 -left-40 w-80 h-80 bg-primary/12 rounded-full blur-3xl"
+        className="absolute -top-20 sm:-top-40 -left-20 sm:-left-40 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ scale: [1, 1.15, 1], rotateZ: 360 }}
@@ -48,7 +48,7 @@ const About = () => {
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 15, repeat: Infinity, ease: 'linear' }
         }}
-        className="absolute top-1/2 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"
+        className="absolute top-1/2 right-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/10 rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -58,18 +58,18 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-14 md:mb-16\"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent">
-              Sobre FLUXO
+              Sobre FLUXO INFORMÁTICO
             </span>
           </h2>
-          <p className="text-xl text-light/70">Criatividade, qualidade e inovação em cada projeto</p>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-light/70 px-2 sm:px-0">Criatividade, qualidade e inovação em cada projeto</p>
         </motion.div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
           {/* Left - Description */}
           <motion.div
             variants={containerVariants}
@@ -81,7 +81,7 @@ const About = () => {
               variants={itemVariants}
               className="text-xl text-light/80 mb-6 leading-relaxed"
             >
-              Fundada em 2018, a FLUXO Informática é uma empresa moçambicana, composta por um corpo profissional altamente capacitado em diferentes áreas. Ao longo desses anos, buscamos aperfeiçoar nossos serviços para garantir qualidade e satisfação dos nossos clientes.
+              Fundada em 2018, a FLUXO INFORMÁTICO é uma empresa moçambicana, composta por um corpo profissional altamente capacitado em diferentes áreas. Ao longo desses anos, buscamos aperfeiçoar nossos serviços para garantir qualidade e satisfação dos nossos clientes.
             </motion.p>
 
             <motion.p

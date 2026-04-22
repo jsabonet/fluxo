@@ -62,7 +62,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent"
         >
-          FLUXO
+          FLUXO INFORMÁTICO
         </motion.h1>
 
         {/* Subtitle */}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa'
+import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok } from 'react-icons/fa'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,25 +37,25 @@ const Contact = () => {
     {
       icon: FaPhone,
       title: 'Telefone',
-      value: '(11) 1234-5678',
-      href: 'tel:+551112345678'
+      value: '87 614 1982 / 84 289 3089',
+      href: 'tel:+258876141982'
     },
     {
       icon: FaWhatsapp,
       title: 'WhatsApp',
-      value: '(11) 98765-4321',
-      href: 'https://wa.me/5511987654321'
+      value: '87 614 1982',
+      href: 'https://wa.me/258876141982'
     },
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'contato@fluxo.com.br',
-      href: 'mailto:contato@fluxo.com.br'
+      value: 'fluxoinformatico@gmail.com',
+      href: 'mailto:fluxoinformatico@gmail.com'
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Localização',
-      value: 'São Paulo, SP',
+      value: `Av. Alberto Joaquim Chipande\nPerto do Portão Wimbe\nAlto Gingone, Cidade de Pemba`,
       href: '#'
     }
   ]
@@ -79,17 +80,17 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="contact" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Animated Background Elements */}
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 left-0 w-96 h-96 bg-primary/12 rounded-full blur-3xl"
+        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-primary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-0 right-0 w-96 h-96 bg-secondary/12 rounded-full blur-3xl"
+        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ scale: [1, 1.2, 1], rotateZ: 360 }}
@@ -97,7 +98,7 @@ const Contact = () => {
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 18, repeat: Infinity, ease: 'linear' }
         }}
-        className="absolute top-1/2 left-1/3 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/10 rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -107,17 +108,17 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-14 md:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent">
-              Entre em Contato
+              Entre em Contacto
             </span>
           </h2>
-          <p className="text-xl text-light/70">Estamos prontos para transformar sua visão em realidade</p>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-light/70 px-2 sm:px-0">Estamos prontos para transformar sua visão em realidade</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
           {/* Contact Info */}
           <motion.div
             variants={containerVariants}
@@ -128,7 +129,7 @@ const Contact = () => {
           >
             <motion.p
               variants={itemVariants}
-              className="text-xl text-light/70 leading-relaxed"
+              className="text-sm sm:text-base md:text-lg text-light/70 leading-relaxed"
             >
               Tem dúvidas? Quer conhecer mais sobre nossos serviços? Entre em contato conosco e receba um orçamento personalizado.
             </motion.p>
@@ -137,24 +138,24 @@ const Contact = () => {
               {contactInfo.map((info, index) => {
                 const Icon = info.icon
                 return (
-                  <motion.a
-                    key={index}
-                    href={info.href}
-                    variants={itemVariants}
-                    whileHover={{ x: 10 }}
-                    className="flex items-start gap-6 p-6 bg-gradient-to-r from-dark to-dark/50 border border-primary/30 rounded-xl hover:border-secondary/50 transition-all duration-300"
-                  >
-                    <motion.div
-                      whileHover={{ scale: 1.2, rotate: 10 }}
-                      className="flex-shrink-0"
+                    <motion.a
+                      key={index}
+                      href={info.href}
+                      variants={itemVariants}
+                      whileHover={{ x: 10 }}
+                      className="flex items-start gap-4 sm:gap-6 p-4 sm:p-6 bg-gradient-to-r from-dark to-dark/50 border border-primary/30 rounded-xl hover:border-secondary/50 transition-all duration-300"
                     >
-                      <Icon className="text-3xl text-secondary mt-1" />
-                    </motion.div>
-                    <div>
-                      <h3 className="text-xl font-bold text-light mb-1">{info.title}</h3>
-                      <p className="text-light/70">{info.value}</p>
-                    </div>
-                  </motion.a>
+                      <motion.div
+                        whileHover={{ scale: 1.2, rotate: 10 }}
+                        className="flex-shrink-0"
+                      >
+                        <Icon className="text-2xl sm:text-3xl text-secondary mt-1" />
+                      </motion.div>
+                      <div>
+                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-light mb-1">{info.title}</h3>
+                        <p className="text-xs sm:text-sm md:text-base text-light/70">{info.value}</p>
+                      </div>
+                    </motion.a>
                 )
               })}
             </div>
@@ -162,24 +163,62 @@ const Contact = () => {
             {/* Social Links */}
             <motion.div
               variants={itemVariants}
-              className="flex gap-4 pt-6"
+              className="flex gap-3 sm:gap-4 pt-6 flex-wrap"
             >
               {[
-                { icon: '💼', href: '#' },
-                { icon: '📘', href: '#' },
-                { icon: '📷', href: '#' },
-                { icon: '🎥', href: '#' }
-              ].map((social, i) => (
-                <motion.a
-                  key={i}
-                  href={social.href}
-                  whileHover={{ scale: 1.2, y: -5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-12 h-12 bg-primary/20 border border-primary/50 rounded-lg flex items-center justify-center text-2xl hover:bg-secondary/20 hover:border-secondary/50 transition-all duration-300"
-                >
-                  {social.icon}
-                </motion.a>
-              ))}
+                { 
+                  icon: FaLinkedin, 
+                  href: 'https://linkedin.com/company/fluxo',
+                  label: 'LinkedIn',
+                  name: 'LinkedIn'
+                },
+                { 
+                  icon: FaFacebook, 
+                  href: 'https://facebook.com/fluxoinformatica',
+                  label: 'Facebook',
+                  name: 'Facebook'
+                },
+                { 
+                  icon: FaInstagram, 
+                  href: 'https://instagram.com/fluxoinformatica',
+                  label: 'Instagram',
+                  name: 'Instagram'
+                },
+                { 
+                  icon: FaYoutube, 
+                  href: 'https://youtube.com/@fluxoinformatica',
+                  label: 'YouTube',
+                  name: 'YouTube'
+                },
+                { 
+                  icon: FaTwitter, 
+                  href: 'https://twitter.com/fluxoinformatica',
+                  label: 'Twitter',
+                  name: 'Twitter'
+                },
+                { 
+                  icon: FaTiktok, 
+                  href: 'https://tiktok.com/@fluxoinformatica',
+                  label: 'TikTok',
+                  name: 'TikTok'
+                }
+              ].map((social, i) => {
+                const Icon = social.icon
+                return (
+                  <motion.a
+                    key={i}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={social.name}
+                    whileHover={{ scale: 1.2, y: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-primary/20 to-secondary/20 border border-primary/50 rounded-lg flex items-center justify-center hover:border-secondary/80 transition-all duration-300 group"
+                  >
+                    <Icon className="text-lg sm:text-xl text-secondary group-hover:text-white transition-colors duration-300" />
+                  </motion.a>
+                )
+              })}
             </motion.div>
           </motion.div>
 
@@ -229,7 +268,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 className="w-full px-6 py-3 bg-dark border border-primary/30 text-light rounded-lg focus:outline-none focus:border-secondary/50 transition-all duration-300"
-                placeholder="(11) 98765-4321"
+                placeholder="(+258) 8x xxxx-xxxx"
               />
             </div>
 

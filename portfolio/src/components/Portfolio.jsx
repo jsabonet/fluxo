@@ -75,17 +75,17 @@ const Portfolio = () => {
     : projects.filter(p => p.category === selectedCategory)
 
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section id="portfolio" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Animated Background Elements */}
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 right-0 w-96 h-96 bg-primary/12 rounded-full blur-3xl"
+        className="absolute top-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-primary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/12 rounded-full blur-3xl"
+        className="absolute bottom-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/12 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ scale: [1, 1.2, 1], rotateZ: -360 }}
@@ -93,7 +93,7 @@ const Portfolio = () => {
           scale: { duration: 7, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 20, repeat: Infinity, ease: 'linear' }
         }}
-        className="absolute top-1/3 left-1/3 w-80 h-80 bg-primary/10 rounded-full blur-3xl"
+        className="absolute top-1/3 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/10 rounded-full blur-3xl"
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -103,14 +103,14 @@ const Portfolio = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-14 md:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4">
             <span className="bg-gradient-to-r from-light via-secondary to-light bg-clip-text text-transparent">
               Portfólio
             </span>
           </h2>
-          <p className="text-xl text-light/70">Conheça alguns de nossos melhores trabalhos</p>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-light/70 px-2 sm:px-0">Conheça alguns de nossos melhores trabalhos</p>
         </motion.div>
 
         {/* Category Filter */}

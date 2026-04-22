@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import logo from '../assets/logo.png'
+import { FaLinkedin, FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaTiktok } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -59,20 +60,29 @@ const Footer = () => {
             </p>
             <div className="flex gap-3">
               {[
-                { icon: '💼', href: '#' },
-                { icon: '📘', href: '#' },
-                { icon: '📷', href: '#' },
-                { icon: '🎥', href: '#' }
-              ].map((social, i) => (
-                <motion.a
-                  key={i}
-                  href={social.href}
-                  whileHover={{ scale: 1.2, y: -5 }}
-                  className="w-10 h-10 bg-primary/20 border border-primary/50 rounded-lg flex items-center justify-center text-lg hover:bg-secondary/20 hover:border-secondary/50 transition-all duration-300"
-                >
-                  {social.icon}
-                </motion.a>
-              ))}
+                { icon: FaLinkedin, href: 'https://linkedin.com/company/fluxo', name: 'LinkedIn' },
+                { icon: FaFacebook, href: 'https://facebook.com/fluxoinformatica', name: 'Facebook' },
+                { icon: FaInstagram, href: 'https://instagram.com/fluxoinformatica', name: 'Instagram' },
+                { icon: FaYoutube, href: 'https://youtube.com/@fluxoinformatica', name: 'YouTube' },
+                { icon: FaTwitter, href: 'https://twitter.com/fluxoinformatica', name: 'Twitter' },
+                { icon: FaTiktok, href: 'https://tiktok.com/@fluxoinformatica', name: 'TikTok' }
+              ].map((social, i) => {
+                const Icon = social.icon
+                return (
+                  <motion.a
+                    key={i}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title={social.name}
+                    whileHover={{ scale: 1.2, y: -5 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-10 h-10 sm:w-10 sm:h-10 bg-primary/20 border border-primary/50 rounded-lg flex items-center justify-center text-lg hover:bg-secondary/20 hover:border-secondary/50 transition-all duration-300"
+                  >
+                    <Icon className="text-base sm:text-lg text-secondary group-hover:text-white transition-colors duration-300" />
+                  </motion.a>
+                )
+              })}
             </div>
           </motion.div>
 
@@ -116,20 +126,20 @@ const Footer = () => {
             <div className="space-y-3">
               <div>
                 <p className="text-light/70 text-sm">Telefone</p>
-                <a href="tel:+551112345678" className="text-secondary hover:text-secondary/80 transition-colors">
-                  (11) 1234-5678
+                <a href="tel:+258876141982" className="text-secondary hover:text-secondary/80 transition-colors">
+                  87 614 1982
                 </a>
               </div>
               <div>
                 <p className="text-light/70 text-sm">WhatsApp</p>
-                <a href="https://wa.me/5511987654321" className="text-secondary hover:text-secondary/80 transition-colors">
-                  (11) 98765-4321
+                <a href="https://wa.me/258842893089" className="text-secondary hover:text-secondary/80 transition-colors">
+                  84 289 3089
                 </a>
               </div>
               <div>
                 <p className="text-light/70 text-sm">Email</p>
-                <a href="mailto:contato@fluxo.com.br" className="text-secondary hover:text-secondary/80 transition-colors">
-                  contato@fluxo.com.br
+                <a href="mailto:fluxoinformatico@gmail.com" className="text-secondary hover:text-secondary/80 transition-colors">
+                  fluxoinformatico@gmail.com
                 </a>
               </div>
             </div>
@@ -154,7 +164,7 @@ const Footer = () => {
           className="py-8 flex flex-col md:flex-row justify-between items-center text-light/50 text-sm"
         >
           <p>
-            © {currentYear} FLUXO - Serigrafia & Gráfica. Todos os direitos reservados.
+            © {currentYear} FLUXO INFORMÁTICO - Serigrafia & Gráfica. Todos os direitos reservados.
           </p>
           <motion.div
             className="flex gap-6 mt-4 md:mt-0"
@@ -180,6 +190,7 @@ const Footer = () => {
       >
         ↑
       </motion.a>
+      {/* Floating WhatsApp Button moved to App.jsx for global availability */}
     </footer>
   )
 }
