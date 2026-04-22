@@ -85,12 +85,18 @@ const Contact = () => {
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-primary/12 rounded-full blur-3xl"
+        className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-gradient-to-br from-primary/40 to-primary/20 rounded-full blur-2xl ring-2 ring-primary/50 shadow-lg shadow-primary/30"
+        style={{
+          boxShadow: '0 0 40px rgba(107, 65, 193, 0.4), inset 0 0 40px rgba(107, 65, 193, 0.15)'
+        }}
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
-        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-secondary/12 rounded-full blur-3xl"
+        className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 bg-gradient-to-tr from-secondary/40 to-secondary/20 rounded-full blur-2xl ring-2 ring-secondary/50 shadow-lg shadow-secondary/30"
+        style={{
+          boxShadow: '0 0 50px rgba(0, 217, 255, 0.4), inset 0 0 50px rgba(0, 217, 255, 0.15)'
+        }}
       />
       <motion.div
         animate={{ scale: [1, 1.2, 1], rotateZ: 360 }}
@@ -98,7 +104,10 @@ const Contact = () => {
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 18, repeat: Infinity, ease: 'linear' }
         }}
-        className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/10 rounded-full blur-3xl"
+        className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-gradient-to-br from-secondary/35 to-secondary/15 rounded-full blur-2xl ring-2 ring-secondary/40 shadow-md shadow-secondary/25"
+        style={{
+          boxShadow: '0 0 40px rgba(0, 217, 255, 0.35), inset 0 0 40px rgba(0, 217, 255, 0.1)'
+        }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">

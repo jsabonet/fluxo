@@ -35,12 +35,18 @@ const About = () => {
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 18, repeat: Infinity, ease: 'linear' }}
-        className="absolute -bottom-20 sm:-bottom-40 -right-20 sm:-right-40 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/12 rounded-full blur-3xl"
+        className="absolute -bottom-20 sm:-bottom-40 -right-20 sm:-right-40 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-gradient-to-br from-secondary/35 to-secondary/15 rounded-full blur-2xl ring-2 ring-secondary/40 shadow-md shadow-secondary/25"
+        style={{
+          boxShadow: '0 0 40px rgba(0, 217, 255, 0.35), inset 0 0 40px rgba(0, 217, 255, 0.1)'
+        }}
       />
       <motion.div
         animate={{ rotate: -360 }}
         transition={{ duration: 22, repeat: Infinity, ease: 'linear' }}
-        className="absolute -top-20 sm:-top-40 -left-20 sm:-left-40 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-primary/12 rounded-full blur-3xl"
+        className="absolute -top-20 sm:-top-40 -left-20 sm:-left-40 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-gradient-to-tr from-primary/35 to-primary/15 rounded-full blur-2xl ring-2 ring-primary/40 shadow-md shadow-primary/25"
+        style={{
+          boxShadow: '0 0 40px rgba(107, 65, 193, 0.35), inset 0 0 40px rgba(107, 65, 193, 0.1)'
+        }}
       />
       <motion.div
         animate={{ scale: [1, 1.15, 1], rotateZ: 360 }}
@@ -48,7 +54,10 @@ const About = () => {
           scale: { duration: 8, repeat: Infinity, ease: 'easeInOut' },
           rotateZ: { duration: 15, repeat: Infinity, ease: 'linear' }
         }}
-        className="absolute top-1/2 right-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-secondary/10 rounded-full blur-3xl"
+        className="absolute top-1/2 right-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 bg-gradient-to-br from-secondary/30 to-secondary/10 rounded-full blur-2xl ring-2 ring-secondary/35 shadow-sm shadow-secondary/20"
+        style={{
+          boxShadow: '0 0 35px rgba(0, 217, 255, 0.3), inset 0 0 35px rgba(0, 217, 255, 0.08)'
+        }}
       />
 
       <div className="max-w-7xl mx-auto relative z-10">
