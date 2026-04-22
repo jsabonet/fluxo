@@ -7,7 +7,9 @@
 }
 
 body {
-  @apply bg-dark text-light overflow-x-hidden;
+  background-color: #0F172A;
+  color: #F8FAFC;
+  overflow-x: hidden;
 }
 
 /* Animações customizadas */
