@@ -288,7 +288,7 @@ const Clients = () => {
               className="px-8 py-3 bg-gradient-to-r from-secondary to-primary text-dark font-bold rounded-lg inline-block transition-all duration-300"
               whileHover={{ 
                 scale: 1.08,
-                boxShadow: '0 0 20px rgba(0, 217, 255, 0.4)',
+                boxShadow: '0 0 20px rgba(0,102,255,0.35), 0 0 30px rgba(107,65,193,0.12)',
               }}
               whileTap={{ scale: 0.95 }}
             >

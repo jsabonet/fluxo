@@ -7,10 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#6B41C1',
-        secondary: '#00D9FF',
-        dark: '#0F172A',
-        light: '#F8FAFC'
+        primary: '#0066ff',
+        secondary: '#00d8ff',
+        dark: '#0a1f3d',
+        light: '#F8FAFC',
+        // Logo-aligned accents
+        logoPurple: '#6B41C1',
+        logoCyan: '#00BFFF',
+        logoYellow: '#FFD400',
+        logoPink: '#FF2D9A'
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],

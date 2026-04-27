@@ -88,7 +88,7 @@ const Services = () => {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(107, 65, 193, 0.2)' }}
+                whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(0, 102, 255, 0.2)' }}
                 transition={{ duration: 0.3 }}
                 className="bg-gradient-to-br from-dark to-dark/50 border border-primary/30 rounded-xl p-8 hover:border-secondary/50 transition-all duration-300"
               >

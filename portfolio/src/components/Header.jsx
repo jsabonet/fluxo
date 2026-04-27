@@ -38,7 +38,7 @@ const Header = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ color: '#00D9FF' }}
+              whileHover={{ color: '#00d8ff' }}
               className="text-light hover:text-secondary transition-colors font-medium"
             >
               {item.label}

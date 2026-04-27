@@ -37,8 +37,8 @@ const Hero = () => {
         }}
         className="absolute top-10 sm:top-20 right-5 sm:right-10 w-32 sm:w-48 md:w-72 h-32 sm:h-48 md:h-72 blur-lg ring-2 ring-primary/75"
         style={{
-          background: `radial-gradient(circle at 30% 30%, rgba(107, 65, 193, 0.6) 0%, rgba(107, 65, 193, 0.4) 15%, rgba(107, 65, 193, 0.2) 35%, transparent 50%), 
-                        conic-gradient(from 0deg at 50% 50%, rgba(107, 65, 193, 0.5) 0deg, transparent 60deg, rgba(107, 65, 193, 0.3) 120deg, transparent 180deg, rgba(107, 65, 193, 0.4) 240deg, transparent 300deg, rgba(107, 65, 193, 0.5) 360deg)`,
+          background: `radial-gradient(circle at 30% 30%, rgba(107,65,193,0.56) 0%, rgba(0,102,255,0.4) 18%, rgba(255,45,154,0.18) 40%, transparent 55%), 
+                        conic-gradient(from 0deg at 50% 50%, rgba(0,191,255,0.46) 0deg, transparent 60deg, rgba(255,212,0,0.22) 130deg, transparent 200deg, rgba(0,102,255,0.34) 270deg, transparent 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -54,8 +54,8 @@ const Hero = () => {
         }}
         className="absolute bottom-10 sm:bottom-20 left-5 sm:left-10 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/75"
         style={{
-          background: `radial-gradient(circle at 70% 70%, rgba(0, 217, 255, 0.7) 0%, rgba(0, 217, 255, 0.45) 12%, rgba(0, 217, 255, 0.2) 40%, transparent 55%), 
-                        conic-gradient(from 45deg at 50% 50%, rgba(0, 217, 255, 0.55) 0deg, transparent 70deg, rgba(0, 217, 255, 0.35) 140deg, transparent 200deg, rgba(0, 217, 255, 0.45) 270deg, transparent 320deg, rgba(0, 217, 255, 0.55) 360deg)`,
+          background: `radial-gradient(circle at 70% 70%, rgba(0,216,255,0.7) 0%, rgba(0,102,255,0.42) 14%, rgba(255,212,0,0.18) 42%, transparent 56%), 
+                        conic-gradient(from 45deg at 50% 50%, rgba(0,191,255,0.55) 0deg, transparent 70deg, rgba(107,65,193,0.28) 140deg, transparent 200deg, rgba(0,216,255,0.42) 270deg, transparent 320deg, rgba(0,191,255,0.55) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -73,8 +73,8 @@ const Hero = () => {
         }}
         className="absolute top-1/3 left-1/4 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 blur-lg ring-2 ring-primary/70"
         style={{
-          background: `radial-gradient(circle at 35% 35%, rgba(107, 65, 193, 0.55) 0%, rgba(107, 65, 193, 0.35) 20%, rgba(107, 65, 193, 0.15) 45%, transparent 60%), 
-                        conic-gradient(from 90deg at 50% 50%, rgba(107, 65, 193, 0.45) 0deg, transparent 65deg, rgba(107, 65, 193, 0.3) 130deg, transparent 190deg, rgba(107, 65, 193, 0.4) 260deg, transparent 310deg, rgba(107, 65, 193, 0.45) 360deg)`,
+          background: `radial-gradient(circle at 35% 35%, rgba(107,65,193,0.52) 0%, rgba(0,102,255,0.36) 22%, rgba(255,45,154,0.12) 46%, transparent 62%), 
+                        conic-gradient(from 90deg at 50% 50%, rgba(0,191,255,0.42) 0deg, transparent 65deg, rgba(255,212,0,0.18) 130deg, transparent 190deg, rgba(0,102,255,0.34) 260deg, transparent 310deg, rgba(107,65,193,0.42) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -92,8 +92,8 @@ const Hero = () => {
         }}
         className="absolute bottom-1/3 right-1/4 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/70"
         style={{
-          background: `radial-gradient(circle at 65% 65%, rgba(0, 217, 255, 0.5) 0%, rgba(0, 217, 255, 0.35) 18%, rgba(0, 217, 255, 0.15) 42%, transparent 58%), 
-                        conic-gradient(from 180deg at 50% 50%, rgba(0, 217, 255, 0.4) 0deg, transparent 72deg, rgba(0, 217, 255, 0.28) 145deg, transparent 210deg, rgba(0, 217, 255, 0.35) 280deg, transparent 330deg, rgba(0, 217, 255, 0.4) 360deg)`,
+          background: `radial-gradient(circle at 65% 65%, rgba(0,216,255,0.5) 0%, rgba(107,65,193,0.34) 20%, rgba(0,102,255,0.15) 44%, transparent 60%), 
+                        conic-gradient(from 180deg at 50% 50%, rgba(0,191,255,0.38) 0deg, transparent 72deg, rgba(255,45,154,0.22) 145deg, transparent 210deg, rgba(0,216,255,0.35) 280deg, transparent 330deg, rgba(0,191,255,0.4) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -109,8 +109,8 @@ const Hero = () => {
         }}
         className="absolute top-1/2 -left-16 sm:-left-32 w-32 sm:w-64 md:w-80 h-32 sm:h-64 md:h-80 blur-lg ring-2 ring-primary/65"
         style={{
-          background: `radial-gradient(circle at 40% 40%, rgba(107, 65, 193, 0.45) 0%, rgba(107, 65, 193, 0.3) 22%, rgba(107, 65, 193, 0.1) 48%, transparent 65%), 
-                        conic-gradient(from 270deg at 50% 50%, rgba(107, 65, 193, 0.35) 0deg, transparent 68deg, rgba(107, 65, 193, 0.22) 138deg, transparent 202deg, rgba(107, 65, 193, 0.3) 270deg, transparent 320deg, rgba(107, 65, 193, 0.35) 360deg)`,
+          background: `radial-gradient(circle at 40% 40%, rgba(107,65,193,0.45) 0%, rgba(0,102,255,0.28) 24%, rgba(255,212,0,0.08) 50%, transparent 68%), 
+                        conic-gradient(from 270deg at 50% 50%, rgba(0,191,255,0.34) 0deg, transparent 68deg, rgba(255,45,154,0.2) 138deg, transparent 202deg, rgba(0,102,255,0.28) 270deg, transparent 320deg, rgba(107,65,193,0.35) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -128,8 +128,8 @@ const Hero = () => {
         }}
         className="absolute -bottom-10 sm:-bottom-20 -right-10 sm:-right-20 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/65"
         style={{
-          background: `radial-gradient(circle at 60% 60%, rgba(0, 217, 255, 0.48) 0%, rgba(0, 217, 255, 0.32) 16%, rgba(0, 217, 255, 0.12) 44%, transparent 62%), 
-                        conic-gradient(from 315deg at 50% 50%, rgba(0, 217, 255, 0.38) 0deg, transparent 75deg, rgba(0, 217, 255, 0.25) 150deg, transparent 215deg, rgba(0, 217, 255, 0.32) 285deg, transparent 335deg, rgba(0, 217, 255, 0.38) 360deg)`,
+          background: `radial-gradient(circle at 60% 60%, rgba(0,216,255,0.48) 0%, rgba(0,102,255,0.32) 18%, rgba(107,65,193,0.12) 44%, transparent 62%), 
+                        conic-gradient(from 315deg at 50% 50%, rgba(0,191,255,0.36) 0deg, transparent 75deg, rgba(255,212,0,0.2) 150deg, transparent 215deg, rgba(0,216,255,0.32) 285deg, transparent 335deg, rgba(0,191,255,0.38) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -186,7 +186,7 @@ const Hero = () => {
         >
           <motion.a
             href="#portfolio"
-            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 217, 255, 0.5)' }}
+            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 216, 255, 0.5)' }}
             whileTap={{ scale: 0.95 }}
             className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-secondary text-dark font-bold rounded-lg text-sm sm:text-base md:text-lg transition-all duration-300"
           >
@@ -194,7 +194,7 @@ const Hero = () => {
           </motion.a>
           <motion.a
             href="#contact"
-            whileHover={{ scale: 1.05, borderColor: '#00D9FF' }}
+            whileHover={{ scale: 1.05, borderColor: '#00d8ff' }}
             whileTap={{ scale: 0.95 }}
             className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-primary text-light font-bold rounded-lg text-sm sm:text-base md:text-lg hover:bg-primary/10 transition-all duration-300"
           >

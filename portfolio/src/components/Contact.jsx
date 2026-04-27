@@ -87,8 +87,8 @@ const Contact = () => {
         transition={{ duration: 26, repeat: Infinity, ease: 'linear' }}
         className="absolute top-0 left-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-primary/75"
         style={{
-          background: `radial-gradient(circle at 30% 30%, rgba(107, 65, 193, 0.55) 0%, rgba(107, 65, 193, 0.38) 14%, rgba(107, 65, 193, 0.18) 38%, transparent 52%), 
-                        conic-gradient(from 45deg at 50% 50%, rgba(107, 65, 193, 0.45) 0deg, transparent 68deg, rgba(107, 65, 193, 0.3) 136deg, transparent 204deg, rgba(107, 65, 193, 0.38) 272deg, transparent 320deg, rgba(107, 65, 193, 0.45) 360deg)`,
+          background: `radial-gradient(circle at 30% 30%, rgba(107,65,193,0.56) 0%, rgba(0,216,255,0.36) 14%, rgba(255,45,154,0.18) 38%, transparent 52%), 
+                        conic-gradient(from 45deg at 50% 50%, rgba(0,216,255,0.46) 0deg, transparent 68deg, rgba(255,212,0,0.28) 136deg, transparent 204deg, rgba(107,65,193,0.36) 272deg, transparent 320deg, rgba(0,216,255,0.45) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -97,8 +97,8 @@ const Contact = () => {
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
         className="absolute bottom-0 right-0 w-40 sm:w-64 md:w-96 h-40 sm:h-64 md:h-96 blur-lg ring-2 ring-secondary/75"
         style={{
-          background: `radial-gradient(circle at 70% 70%, rgba(0, 217, 255, 0.6) 0%, rgba(0, 217, 255, 0.42) 13%, rgba(0, 217, 255, 0.2) 36%, transparent 50%), 
-                        conic-gradient(from 225deg at 50% 50%, rgba(0, 217, 255, 0.5) 0deg, transparent 70deg, rgba(0, 217, 255, 0.35) 140deg, transparent 210deg, rgba(0, 217, 255, 0.42) 280deg, transparent 335deg, rgba(0, 217, 255, 0.5) 360deg)`,
+          background: `radial-gradient(circle at 70% 70%, rgba(0,216,255,0.6) 0%, rgba(16,185,129,0.26) 13%, rgba(107,65,193,0.2) 36%, transparent 50%), 
+                        conic-gradient(from 225deg at 50% 50%, rgba(16,185,129,0.42) 0deg, transparent 70deg, rgba(0,216,255,0.35) 140deg, transparent 210deg, rgba(255,45,154,0.32) 280deg, transparent 335deg, rgba(0,216,255,0.5) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -110,8 +110,8 @@ const Contact = () => {
         }}
         className="absolute top-1/2 left-1/3 w-32 sm:w-56 md:w-80 h-32 sm:h-56 md:h-80 blur-lg ring-2 ring-secondary/70"
         style={{
-          background: `radial-gradient(circle at 50% 50%, rgba(0, 217, 255, 0.5) 0%, rgba(0, 217, 255, 0.33) 17%, rgba(0, 217, 255, 0.13) 44%, transparent 60%), 
-                        conic-gradient(from 135deg at 50% 50%, rgba(0, 217, 255, 0.4) 0deg, transparent 75deg, rgba(0, 217, 255, 0.26) 150deg, transparent 222deg, rgba(0, 217, 255, 0.33) 290deg, transparent 335deg, rgba(0, 217, 255, 0.4) 360deg)`,
+          background: `radial-gradient(circle at 50% 50%, rgba(255,45,154,0.5) 0%, rgba(0,216,255,0.33) 17%, rgba(107,65,193,0.13) 44%, transparent 60%), 
+                        conic-gradient(from 135deg at 50% 50%, rgba(0,216,255,0.4) 0deg, transparent 75deg, rgba(255,45,154,0.26) 150deg, transparent 222deg, rgba(107,65,193,0.33) 290deg, transparent 335deg, rgba(0,216,255,0.4) 360deg)`,
           borderRadius: '50%'
         }}
       />
@@ -249,7 +249,7 @@ const Contact = () => {
             <div>
               <label className="block text-light font-semibold mb-2">Nome</label>
               <motion.input
-                whileFocus={{ boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)' }}
+                whileFocus={{ boxShadow: '0 0 20px rgba(0, 198, 248, 0.3)' }}
                 type="text"
                 name="name"
                 value={formData.name}
@@ -263,7 +263,7 @@ const Contact = () => {
             <div>
               <label className="block text-light font-semibold mb-2">Email</label>
               <motion.input
-                whileFocus={{ boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)' }}
+                whileFocus={{ boxShadow: '0 0 20px rgba(255, 107, 53, 0.3)' }}
                 type="email"
                 name="email"
                 value={formData.email}
@@ -277,7 +277,7 @@ const Contact = () => {
             <div>
               <label className="block text-light font-semibold mb-2">Telefone</label>
               <motion.input
-                whileFocus={{ boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)' }}
+                whileFocus={{ boxShadow: '0 0 20px rgba(139, 92, 246, 0.3)' }}
                 type="tel"
                 name="phone"
                 value={formData.phone}
@@ -290,7 +290,7 @@ const Contact = () => {
             <div>
               <label className="block text-light font-semibold mb-2">Assunto</label>
               <motion.input
-                whileFocus={{ boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)' }}
+                whileFocus={{ boxShadow: '0 0 20px rgba(0, 198, 248, 0.3)' }}
                 type="text"
                 name="subject"
                 value={formData.subject}
@@ -304,7 +304,7 @@ const Contact = () => {
             <div>
               <label className="block text-light font-semibold mb-2">Mensagem</label>
               <motion.textarea
-                whileFocus={{ boxShadow: '0 0 20px rgba(0, 217, 255, 0.3)' }}
+                whileFocus={{ boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)' }}
                 name="message"
                 value={formData.message}
                 onChange={handleChange}

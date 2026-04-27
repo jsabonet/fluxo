@@ -89,7 +89,7 @@ const Hero = () => {
         >
           <motion.a
             href="#portfolio"
-            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 217, 255, 0.5)' }}
+            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 216, 255, 0.5)' }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-secondary text-dark font-bold rounded-lg text-lg transition-all duration-300"
           >
@@ -97,7 +97,7 @@ const Hero = () => {
           </motion.a>
           <motion.a
             href="#contact"
-            whileHover={{ scale: 1.05, borderColor: '#00D9FF' }}
+            whileHover={{ scale: 1.05, borderColor: '#00d8ff' }}
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 border-2 border-primary text-light font-bold rounded-lg text-lg hover:bg-primary/10 transition-all duration-300"
           >
